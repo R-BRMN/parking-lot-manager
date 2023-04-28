@@ -3,17 +3,18 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { ParkingLotManagerModule } from './app/parking-lot-manager/parking-lot-manager.module';
+import { AppModule } from './app/app.module';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 @Component({
   selector: 'my-app',
   standalone: true,
-  imports: [CommonModule, ParkingLotManagerModule],
+  imports: [CommonModule, AppModule],
   template: `
-    <app-parking-lot-manager></app-parking-lot-manager>
   `,
 })
 export class App {
   name = 'Angular';
 }
 
-bootstrapApplication(App);
+platformBrowserDynamic().bootstrapModule(AppModule);
