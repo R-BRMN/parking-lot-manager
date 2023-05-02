@@ -1,10 +1,13 @@
 <div class="flex-center-column">
     <h1>Parking lot manager</h1>
     <div id="parking-lot-manager-container">
-        <div style="display: flex; flex-direction: column; gap: 12px">
+        <div style="display: flex; flex-direction: column; gap: 12px; justify-content: start;">
             <h3 style="margin: 0px; text-align: center;">PARKED CARS</h3>
             <app-parked-cars [cars]="[{licensePlate: '1x8gf9s0'}]"></app-parked-cars>
         </div>
-        <div></div>
+        <div style="display: flex; flex-direction: column; gap: 12px">
+            <h3 style="margin: 0px; text-align: center;">GATE CONTROLS</h3>
+            <app-gate-control></app-gate-control>
+        </div>
     </div>
 </div>

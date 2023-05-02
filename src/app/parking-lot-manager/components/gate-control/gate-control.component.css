@@ -1,0 +1,16 @@
+.car-at-gate-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.button-container {
+    width: 100%;
+}
+
+.button-container > * {
+    flex-basis: 33%;
+    width: 100%;
+}
