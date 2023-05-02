@@ -1,0 +1,3 @@
+interface Car {
+    licensePlate: string;
+}

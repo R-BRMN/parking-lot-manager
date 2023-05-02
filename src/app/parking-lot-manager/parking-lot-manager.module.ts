@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ParkingLotManagerComponent } from './parking-lot-manager.component';
+import { ParkingLotManagerComponent } from './components/parking-lot-manager.component';
+import { ParkedCarsComponent } from './components/parked-cars/parked-cars.component';
 
 
 
 @NgModule({
   declarations: [
-    ParkingLotManagerComponent
+    ParkingLotManagerComponent,
+    ParkedCarsComponent
   ],
   imports: [
     CommonModule
